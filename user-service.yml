@@ -1,0 +1,18 @@
+spinrg:
+  datasoure:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: '{cipher}AQCAGiFjnCMXL2qaib+DZjUhm5MV/R7SiWshBCRlEj4kVeiK0lWIqVGmggBb+d0vvkCQaYd+x69/i6j7K1QA73I8dXRtrPWFFNWWcvNGEdKg1XCM1QFazRwONLPOJ9hh3tZ/0klSWu/l8v4joBC003PllA9yEwE4tSzfaAuVpK6/ljQsgMaEkd5+cZz634M27POXzAR+v3q0BLbA++6ogQ4l6kxShRn7+9/KFtHj2xecoJifHpmImkjPrwAkgBq337m9hyWOEV4x/lBK4QmyAGMsVSHu3divgNdh5KIihW1FXkgRn8HLeJhNTwXpglcoErA0BxJj5XRrrJ1E0bGD8w1aexMO8nN1h5W/DrfBpcZbMYTp+lNAZEKjOGmrA7xDswA='
+
+token:
+  expiration_time : 864000000
+  secret: user_token_native_user_service_default
+  
+gateway:
+  ip: 127.0.0.1
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    orders_is_empty: User's orders is empty.
